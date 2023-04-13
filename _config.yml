@@ -202,14 +202,20 @@ jekyll_compose:
   auto_open: true
   default_front_matter:
     drafts:
+      title:
+      date:
+      categories:
+      tags:
       description:
       image:
-      category:
-      tags:
+      published: false
+      sitemap: false
     posts:
+      title:
+      date:
+      categories:
+      tags:
       description:
       image:
-      category:
-      tags:
       published: false
       sitemap: false
