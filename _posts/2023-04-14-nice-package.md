@@ -6,8 +6,8 @@ categories: [Python]
 tags: [python, beginners]
 description: Why we need to use '__init.py__' in our Python projects and importing paths.
 image:
-published: true
-sitemap: true
+published: false
+sitemap: false
 ---
 
 When I took my first steps in starting a Python project solo, I ran into difficulties importing files and modules. I had cloned someone's project and I wasn't yet familiar with the way Python imports worked, so I assumed it had something to do with those strange files in each folder labelled "\_\_init\_\_.py"
