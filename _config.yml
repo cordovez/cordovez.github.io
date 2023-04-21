@@ -203,9 +203,9 @@ jekyll_compose:
   default_front_matter:
     drafts:
       title:
-      date:
-      categories:
-      tags:
+      date: YYYY-MM-DD HH:MM:SS +0200
+      categories: []
+      tags: []
       description:
       image:
       published: false
@@ -213,8 +213,8 @@ jekyll_compose:
     posts:
       title:
       date:
-      categories:
-      tags:
+      categories: []
+      tags: []
       description:
       image:
       published: false
