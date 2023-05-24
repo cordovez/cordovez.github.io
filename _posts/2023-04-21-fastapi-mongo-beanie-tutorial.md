@@ -5,7 +5,7 @@ categories: ["Tutorials", "Python"]
 tags: ["python", "fastapi", "mongodb", "beanie"]
 description: "a more complex tutorial for beginners, where errors will be plenty"
 image:
-    path: /assets/images/JungleUrbanus.jpeg
+  path: /assets/images/JungleUrbanus.jpeg
 published: true
 sitemap: false
 ---
@@ -38,7 +38,7 @@ I will go through the set-up in very broad terms, as I am interested more in sho
 
 ### Create a project folder
 
-create a new project directory and cd into it. I decided to call this project “Plantopia”. You can call it whatever you wish. Then create a virtual environment and activate it with the following commands. 
+create a new project directory and cd into it. I decided to call this project “Plantopia”. You can call it whatever you wish. Then create a virtual environment and activate it with the following commands.
 
 ```zsh
 mkdir plantopia && cd $_
@@ -46,8 +46,9 @@ python3 -m venv .venv
 source .venv/bin/activate
 ```
 
->I always name my virtual environments “.venv”. It makes them invisible and I don't forget the name when I need to activate it.
 {: .prompt-tip }
+
+> I always name my virtual environments “.venv”. It makes them invisible and I don't forget the name when I need to activate it.
 
 At the root level of your project, create a file called `requirements.txt` and paste the following list:
 
@@ -63,21 +64,25 @@ python-multipart
 python-jose[cryptography]
 cloudinary
 ```
+
 {: file="plantopia/requirements.txt"}
 
 then run and installation of all these with this command on the terminal: `pip install -r requirements.txt`
 
-### Create a MongoDB Free Account  
+### Create a MongoDB Free Account
+
 Go to [MongoDB](https://www.mongodb.com/) and sign up for a free account and set up your database. The nomenclature can be a little confusing. You will create an “organisation” which will have a database deployment, and you'll also have a “project”, which you should give it the name “plantopia” or whatever you chose to call your project.
 
-### Create a Cloudinary Free Account  
+### Create a Cloudinary Free Account
+
 Go to [Cloudinary](https://cloudinary.com/) and sign up for a free account. At the very basic cloudinary offers you space for saving photos and delivering them to your project as needed. This saves you from storing all those image files on your limited MongoDB database storage space. But Cloudinary is much more than storage. It also offers AI capabilities and editing tools which edit your images or videos on the fly.
 
 ## Conclusion
+
 We are ready to start developing. I prefer to think of all the parts of the project as silos. In this introductory part we:
 
-+ [x] Set up our project files (for FastAPI)
-+ [x] Set up MongoDB
-+ [x] Set up Cloudinary
+- [x] Set up our project files (for FastAPI)
+- [x] Set up MongoDB
+- [x] Set up Cloudinary
 
 Stay tuned for the next step, setting up the DB models and saving documents.

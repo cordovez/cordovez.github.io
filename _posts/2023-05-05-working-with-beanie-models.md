@@ -324,6 +324,19 @@ To get your private uri log in to MongoDB an in your project dash board navigate
 
 Make sure you replace the values in <> with your own.
 
+## Initialising the database connection on server launch
+
+The init_db() function we created above, now needs to be in the main.py file so that it is called every time the server is launched. To achieve this, first import the function at the top of the main.py file as `from config.db import init_db`, then add this code to the same file anywhere after “app=FastAPI”:
+
+{: file='main.py'}
+
+```python
+@app.on_event("startup")
+async def connect():
+    await init_db()
+
+```
+
 ## Conclusion
 
 At this point you should have a working connection to the database and the models in your server which will help communicate with your database and create User and Plant documents as requested by your front-end.

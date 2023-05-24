@@ -21,8 +21,9 @@ To begin this process make sure that you have set up your free account with Mong
 5. Specifiy where you'd like to connect from (use 0.0.0.0/0 to access from anywhere. This can be changed later).
 6. Voilá you can now go to your database (which is empty for now).
 
-> The default method of connection to your database is through using your current IP address. However, if for somereason you are disconnected from this IP address (you disconnect from your the internet) then the connection will stop working because I new IP address will be assigned to your connection. 0.0.0.0/0 prevents that from happening.
-> {: .prompt-warning }
+{: .prompt-warning }
+
+> The default method of connection to your database is through using your current IP address. However, if for some reason you are disconnected from this IP address (you disconnect from your the internet) then the connection will stop working because I new IP address will be assigned to your connection. 0.0.0.0/0 prevents that from happening.
 
 It helps to remember the hierarchy of MongoDB data:
 
